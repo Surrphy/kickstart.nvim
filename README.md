@@ -1,5 +1,7 @@
 # kickstart.nvim
 
+https://github.com/kdheepak/kickstart.nvim/assets/1813121/f3ff9a2b-c31f-44df-a4fa-8a0d7b17cf7b
+
 ### Introduction
 
 A starting point for Neovim that is:
@@ -9,7 +11,7 @@ A starting point for Neovim that is:
 * Documented
 * Modular
 
-This repo is meant to be used as by **YOU** to begin your Neovim journey; remove the things you don't use and add what you miss.
+This repo is meant to be used by **YOU** to begin your Neovim journey; remove the things you don't use and add what you miss.
 
 Kickstart.nvim targets *only* the latest ['stable'](https://github.com/neovim/neovim/releases/tag/stable) and latest ['nightly'](https://github.com/neovim/neovim/releases/tag/nightly) of Neovim. If you are experiencing issues, please make sure you have the latest versions.
 
@@ -25,7 +27,7 @@ Distribution Alternatives:
 * Extract the archive to:
   `~/.config/nvim` (Linux)
   `~/.config/nvim` (MacOS)
-  `%userprofile%\AppData\Local\nvim-data\` (Windows)
+  `%userprofile%\AppData\Local\nvim\` (Windows)
 * Ensure your extraction method did not extract with a parent folder. For example in ~/.config/nvim you should have init.lua not another folder called kickstart.nvim.
 
 ### Git Clone Installation
@@ -34,13 +36,13 @@ Distribution Alternatives:
     `~/.config/nvim` (MacOS)
     `%userprofile%\AppData\Local\nvim\` (Windows)
 
-* run: `git clone https://github.com/nvim-lua/kickstart.nvim.git ~/.config/nvim` OR: `gh repo clone nvim-lua/kickstart.nvim`
+* Run: `git clone https://github.com/nvim-lua/kickstart.nvim.git ~/.config/nvim` OR: `gh repo clone nvim-lua/kickstart.nvim`
 * Run Neovim (from terminal or shortcut) and allow lazy.nvim to download files and set up the basics.
 * Once the setup is complete, restart Neovim.
 * **You're ready to go!**
 
 * (Recommended/Optional) Fork this repo (so that you have your own copy that you can modify).
-* Clone the kickstart repo into `$HOME/.config/nvim/` (Linux/Mac) or `%userprofile%\AppData\Local\nvim-data\` (Windows)
+* Clone the kickstart repo into `$HOME/.config/nvim/` (Linux/Mac) or `%userprofile%\AppData\Local\nvim\` (Windows)
   * If you don't want to include it as a git repo, you can just clone it and then move the files to this location
 
 Additional system requirements:
@@ -53,7 +55,7 @@ Additional system requirements:
 * Inside of your copy, feel free to modify any file you like! It's your copy!
 * Feel free to change any of the default options in `init.lua` to better suit your needs.
 * For adding plugins, there are 3 primary options:
-  * Add new configuration in `lua/custom/plugins/*` files, which will be auto sourced using `lazy.nvim`
+  * Add new configuration in `lua/custom/plugins/*` files, which will be auto sourced using `lazy.nvim` (uncomment the line importing the `custom/plugins` directory in the `init.lua` file to enable this)
   * Modify `init.lua` with additional plugins.
   * Include the `lua/kickstart/plugins/*` files in your configuration.
 
