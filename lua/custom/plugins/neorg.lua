@@ -10,7 +10,7 @@ return {
         ["core.dirman"] = { -- Manages Neorg workspaces
           config = {
             workspaces = {
-              notes = "~/docs/mycelium",
+              mycelium = "~/docs/mycelium",
             },
           },
         },
