@@ -11,6 +11,7 @@ return {
           config = {
             workspaces = {
               mycelium = "~/docs/mycelium",
+              school = "~/school",
             },
           },
         },
